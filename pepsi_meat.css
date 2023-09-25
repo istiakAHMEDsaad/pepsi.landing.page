@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .LOGO {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.CONTENT {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CONTENT .TEXT-BOX {
+    position: relative;
+    max-width: 600px;
+}
+
+.CONTENT .TEXT-BOX h2 {
+    color: white;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.CONTENT .TEXT-BOX h2 span {
+    font-size: 2em;
+}
+
+.CONTENT .TEXT-BOX p {
+    color: white;
+}
+
+.CONTENT .BUTTON {
+    appearance: none;
+    background-color: white;
+    border-width: 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    /*font-family: Clarkson, Helvetica, sans-serif;*/
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin-top: 20px;
+    opacity: 1;
+    padding: 8px 20px;
+    border-radius: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricPrecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.CONTENT .BUTTON:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #EBEBEB;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+.CONTENT .BUTTON:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.CONTENT .BUTTON:after {
+    background-color: white;
+}
+
+.CONTENT .BUTTON span {
+    z-index: 1;
+    position: relative;
+}
+
+.CONTENT .IMG-BOX {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    padding-top: 50px;
+    justify-content: flex-end;
+}
+
+.CONTENT .IMG-BOX img {
+    max-width: 260px;
+}
+
+.THUMBNAIL {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.THUMBNAIL li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.THUMBNAIL li:hover {
+    transform: translateY(-15px);
+}
+
+.THUMBNAIL li img {
+    max-width: 40px;
+}
+
+.SOCIAL {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SOCIAL li {
+    list-style: none;
+}
+
+.SOCIAL li a {
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}

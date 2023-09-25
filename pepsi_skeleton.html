@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pepsi Landing Page</title>
+    <link href="pepsi_meat.css" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="CLASS">
+
+    <header>
+        <a href="#"><img alt="pepsi logo" class="LOGO" src="logo.png"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">News Letter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="CONTENT">
+
+        <div class="TEXT-BOX">
+            <h2>Live for now<br><span>Drink Pepsi</span></h2>
+            <p>
+                We're working diligently to keep products readily available to our consumers.
+                Even if a product shows available in our locator, the product may not be on-shelf.
+                We recommend either ordering via grocery delivery or calling your local store to verify.
+            </p>
+            <button class="BUTTON" role="button"><span class="BUTTON-TEXT">View All Products</span></button>
+        </div>
+
+        <div class="IMG-BOX">
+            <img alt="this is pepsi picture" class="PEPSI-1" src="pepsi001.png">
+        </div>
+    </div>
+
+    <ul class="THUMBNAIL">
+        <li><img alt="this is pepsi picture 1" onclick="img_slider('pepsi001.png'); change_background_color('#0062be')" src="pepsi001.png"></li>
+        <li><img alt="this is pepsi picture 2" onclick="img_slider('pepsi002.png'); change_background_color('#e60c2c')" src="pepsi002.png"></li>
+        <li><img alt="this is pepsi picture 3" onclick="img_slider('pepsi003.png'); change_background_color('#1e1e1e')" src="pepsi003.png"></li>
+    </ul>
+
+    <ul class="SOCIAL">
+        <li><a href="#"><img alt="facebook logo" src="facebook.png"></a></li>
+        <li><a href="#"><img alt="twitter logo" src="twitter.png"></a></li>
+        <li><a href="#"><img alt="instagram logo" src="instagram.png"></a></li>
+    </ul>
+</section>
+
+<script type="text/javascript">
+    function img_slider(anything) {
+        document.querySelector('.PEPSI-1').src = anything;
+    }
+
+    function change_background_color(color) {
+        const CLASS = document.querySelector('.CLASS');
+        CLASS.style.background = color;
+    }
+</script>
+
+</body>
+</html>
