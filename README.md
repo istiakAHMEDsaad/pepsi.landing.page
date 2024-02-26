@@ -1,4 +1,4 @@
-[pepsi landing page](https://istiakahammedsaad.github.io/pepsi.landing.page/)
+[pepsi landing page](https://istiakahmedsaad.github.io/pepsi.landing.page/)
 
 Here I use:
 
